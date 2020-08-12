@@ -27,6 +27,7 @@
 
   <form class="text-center mt-5">
     <div class="form-group">
+      <label for="exampleInputEmail1">$nombre</label>
       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
     </div>
     <div class="form-group">

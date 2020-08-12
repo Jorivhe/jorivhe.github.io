@@ -1,3 +1,12 @@
+ <?php
+  $nombre = $_POST['nombre'];
+  $asunto = $_POST['asunto'];
+  $mensaje = $_POST['mensaje'];
+  echo "Nombre: ".$nombre."<br>";
+  echo "Asunto: ".$asunto."<br>";
+  echo "Mensaje: ".$mensaje."<br>";
+  ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -10,21 +19,22 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <title>Mensaje</title>
+  <title>Enviado</title>
 </head>
 
 <body>
-  <h1 class="text-center mt-5 display-4 text-primary">Prueba Tecnica Unipanamericana</h1>
+  <!-- <h1 class="text-center mt-5 display-4 text-primary">Prueba Tecnica Unipanamericana</h1> -->
 
-  <form method="POST" action="enviar.php" class="text-center mt-5">
+  <form class="text-center mt-5">
     <div class="form-group">
-      <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
     </div>
     <div class="form-group">
-      <input type="text" class="form-control" name="asunto" placeholder="Asunto">
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Asunto">
     </div>
     <div class="form-group">
-      <textarea class="form-control" name="mensaje" rows="3" placeholder="Descripción del Mensaje"></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+        placeholder="Descripción del Mensaje"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
@@ -41,16 +51,5 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
 </body>
-<!-- Footer -->
-<footer class="page-footer font-small blue">
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
 
 </html>

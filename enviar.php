@@ -2,10 +2,7 @@
   $nombre = $_POST['nombre'];
   $asunto = $_POST['asunto'];
   $mensaje = $_POST['mensaje'];
-  echo "Nombre: ".$nombre."<br>";
-  echo "Asunto: ".$asunto."<br>";
-  echo "Mensaje: ".$mensaje."<br>";
-  ?>
+?>
 
 <!doctype html>
 <html lang="en">
@@ -19,38 +16,35 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="css/styles.css">
+
   <title>Enviado</title>
 </head>
 
 <body>
-  <!-- <h1 class="text-center mt-5 display-4 text-primary">Prueba Tecnica Unipanamericana</h1> -->
-
-  <form class="text-center mt-5">
-    <div class="form-group">
-      <label for="exampleInputEmail1">$nombre</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
-    </div>
-    <div class="form-group">
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Asunto">
-    </div>
-    <div class="form-group">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-        placeholder="Descripción del Mensaje"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
-  </form>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+  <div class="container">
+    <form action="index.html" class="text-center mt-5">
+      <div class="container p-3 my-3 bg-dark text-white">
+        <b>Nombre:</b> <?php echo $nombre;?>
+        <br>
+        <b>Asunto:</b> <?php echo $asunto ?>
+        <br>
+        <b>Mensaje:</b> <?php echo $mensaje ?>
+      </div>
+      <button type="submit" class="btn btn-primary">Volver</button>
+    </form>
+  </div>
 </body>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">Prueba Técnica Unipanamericana -
+    <a href="#" class="text-primary"> Jorge Iván Hernández Hernández</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </html>
